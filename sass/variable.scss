@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+
+
+
+// variables for font
+
+$heading-font: 'Ubuntu', sans-serif;
+$global-font: 'Dosis', sans-serif;
+
+
+// variable font weight
+
+$thin: 200;
+$normal: 400;
+$bold: 600;
+$havy: 800;
+
+
+// variable for color
+
+$black:#000000;
+$white: #ffffff; 
+$dark: #212121;
+$light: #616161;
+$blue: #4484CE;
+$red: #4484CE;
+$green: #3CC37E;
+$darkblue: #062F4F;
+$light-black: #161220;
+
+
+@media only screen and (max-width: 991px) {}
