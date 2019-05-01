@@ -1,5 +1,8 @@
 $(document).ready(function(){
-	// preloader javascript
+	$('.menu-opener').on('click', function() {
+		$('.menu-opener').toggleClass('open');
+		$('nav').toggleClass('menu-opne');
+	})
 	
 
 });

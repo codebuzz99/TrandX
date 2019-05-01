@@ -10,6 +10,9 @@ body {
   width: 100%;
   overflow-x: hidden; }
 
+@media screen and (max-width: 575px) {
+  body {
+    font-size: 14px; } }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -38,11 +41,15 @@ h3 {
 
 header {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   header .header-wrapper {
     padding: 25px 0;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
+    header .header-wrapper .menu-opener {
+      display: none; }
     header .header-wrapper nav ul {
       display: flex; }
       header .header-wrapper nav ul li {
@@ -53,7 +60,83 @@ header {
           color: #ffffff;
           font-weight: 600;
           font-size: 12px; }
+    @media screen and (max-width: 767px) {
+      header .header-wrapper .menu-opener {
+        display: block;
+        position: relative;
+        height: 26px;
+        width: 40px;
+        background: none;
+        cursor: pointer;
+        transition: all .6s; }
+        header .header-wrapper .menu-opener span {
+          display: block;
+          position: relative;
+          height: 2px;
+          width: 40px;
+          background: #ffffff;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: all .2s; }
+        header .header-wrapper .menu-opener.open span {
+          height: 0;
+          width: 0; }
+        header .header-wrapper .menu-opener:before {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 40px;
+          background: #ffffff;
+          left: 0;
+          top: 0px;
+          transition: all .6s; }
+        header .header-wrapper .menu-opener.open:before {
+          transform: rotate(-42deg);
+          width: 30px;
+          top: 2px; }
+        header .header-wrapper .menu-opener:after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 40px;
+          background: #ffffff;
+          left: 0;
+          bottom: 0px;
+          transition: all .6s; }
+        header .header-wrapper .menu-opener.open:after {
+          transform: rotate(42deg);
+          width: 30px;
+          bottom: 2px; }
+        header .header-wrapper .menu-opener.open {
+          margin-right: 170px;
+          transform: rotate(180deg); }
+      header .header-wrapper nav {
+        width: 180px;
+        background: #414056;
+        box-shadow: 5px 11px 22px rgba(108, 99, 255, 0.7);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        padding: 15px;
+        right: -200px;
+        transition: all .3s; }
+        header .header-wrapper nav.menu-opne {
+          right: 0; }
+        header .header-wrapper nav ul {
+          flex-flow: column;
+          margin: 0;
+          padding: 0; }
+          header .header-wrapper nav ul li {
+            margin: 0 a;
+              margin-font-size: 14px !important; } }
 
+@media screen and (max-width: 767px) {
+  header .header-wrapper nav ul li a {
+    font-size: 15px; } }
 /*BANNER STYLES HERE*/
 .banner {
   background: url(../img/Path-2.png) no-repeat scroll center bottom/100% 35%, url(../img/background.png) no-repeat fixed center center/cover; }
@@ -80,7 +163,35 @@ header {
       .banner .banner-wrapper .site-btn:hover .fas {
         opacity: 1;
         margin-left: 5px; }
+    @media screen and (max-width: 991px) {
+      .banner .banner-wrapper h1 {
+        font-size: 46px; }
+      .banner .banner-wrapper p {
+        font-size: 18px; } }
+  @media screen and (max-width: 767px) {
+    .banner .banner-wrapper {
+      height: auto;
+      padding: 100px 0 0 0; }
+      .banner .banner-wrapper .col-12.text-right {
+        text-align: center !important; }
+      .banner .banner-wrapper img {
+        width: 300px;
+        margin: 25px auto 0; }
+      .banner .banner-wrapper .site-btn {
+        margin-top: 0; } }
+  @media screen and (max-width: 767px) {
+    .banner .banner-wrapper {
+      padding: 130px 0 0 0; }
+      .banner .banner-wrapper h1 {
+        font-size: 36px;
+        margin-bottom: 10px; }
+      .banner .banner-wrapper p {
+        font-size: 16px; } }
 
+@media screen and (max-width: 767px) {
+  .banner {
+    background: url(../img/Path-2.png) no-repeat scroll center bottom/150% 60%, url(../img/background.png) no-repeat fixed center center/cover;
+    /*border-bottom: 1px solid #eee;*/ } }
 .main-freture-area {
   padding: 20px 0 100px 0; }
   .main-freture-area .icon-round {
@@ -96,6 +207,8 @@ header {
     color: #6C63FF;
     font-size: 1.2em;
     box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.06); }
+  .main-freture-area img {
+    width: 100%; }
   .main-freture-area .main-feature-item-text {
     width: 73%;
     margin: 0 auto; }
@@ -103,7 +216,26 @@ header {
       font-size: .8em;
       padding: 10px 45px;
       margin-top: 15px; }
+  @media screen and (max-width: 991px) {
+    .main-freture-area .main-feature-item-text {
+      width: 86%; }
+      .main-freture-area .main-feature-item-text p {
+        font-size: 14px; }
+      .main-freture-area .main-feature-item-text h3 {
+        font-size: 20px;
+        margin-bottom: 7px; } }
+  @media screen and (max-width: 767px) {
+    .main-freture-area img {
+      width: 300px;
+      margin: 0 auto 15px;
+      display: block; }
+    .main-freture-area .bdrt {
+      border-top: 1px dashed #eee;
+      padding-top: 15px; } }
 
+@media screen and (max-width: 767px) {
+  .main-freture-area {
+    padding: 20px 0 40px 0; } }
 .global-feature {
   padding: 100px 0;
   background: url(../img/Service.png) no-repeat center center/cover;
@@ -124,6 +256,11 @@ header {
     .global-feature .global-feature-item p {
       font-size: 13px; }
 
+@media screen and (max-width: 575px) {
+  .global-feature {
+    padding: 45px 0; }
+    .global-feature h2 {
+      margin-bottom: 20px; } }
 .simple-pricing {
   padding: 100px 0; }
   .simple-pricing .pricing-wrapper {
@@ -143,6 +280,14 @@ header {
         .simple-pricing .pricing-wrapper .pricing-left .pricing-qut img {
           width: 55%;
           margin-right: 10px; }
+        @media screen and (max-width: 991px) {
+          .simple-pricing .pricing-wrapper .pricing-left .pricing-qut img {
+            width: 25%;
+            margin-right: 30px; } }
+        @media screen and (max-width: 575px) {
+          .simple-pricing .pricing-wrapper .pricing-left .pricing-qut img {
+            width: 50%;
+            margin-right: 15px; } }
     .simple-pricing .pricing-wrapper .pricing-item {
       background: #ffffff;
       border-radius: 4px;
@@ -163,7 +308,22 @@ header {
         margin-top: 35px;
         font-size: 12px;
         font-weight: 600; }
+    @media screen and (max-width: 991px) {
+      .simple-pricing .pricing-wrapper .pricing-left {
+        width: 100%; }
+      .simple-pricing .pricing-wrapper .pricing-item {
+        width: 50%; } }
+    @media screen and (max-width: 767px) {
+      .simple-pricing .pricing-wrapper .pricing-item {
+        padding-right: 45px 5px; } }
+    @media screen and (max-width: 575px) {
+      .simple-pricing .pricing-wrapper .pricing-item {
+        width: 300px;
+        margin: 15px auto; } }
 
+@media screen and (max-width: 575px) {
+  .simple-pricing {
+    padding: 45px 0; } }
 .subscribe-options {
   width: 50%;
   margin: 0 auto;
@@ -173,6 +333,12 @@ header {
   .subscribe-options .site-btn {
     font-weight: 600; }
 
+@media screen and (max-width: 991px) {
+  .subscribe-options {
+    width: 80%; } }
+@media screen and (max-width: 991px) {
+  .subscribe-options {
+    width: 100%; } }
 .clients {
   text-align: center;
   margin: 100px 0; }
@@ -182,7 +348,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; }
+    .clients ul li img {
+      max-width: 100%; }
 
+@media screen and (max-width: 575px) {
+  .clients {
+    margin: 50px 0; } }
 footer {
   padding: 50px 0;
   background: #2F2E3D;
