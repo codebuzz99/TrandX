@@ -12,8 +12,13 @@
 
   	<link rel="stylesheet" href="css/normalize.css">
   	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   	<!-- BOOTSTRAP CSS LINKED HERE -->
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
 
  	<meta name="theme-color" content="#fafafa">
 </head>
@@ -48,15 +53,21 @@
     <section class="banner">
         <div class="container">
             <div class="banner-wrapper">
-                <div class="row">
+                <div class="row d-flex align-items-center">
                     <div class="col-12 col-md-6 col-lg-5">
-                        <h1>A Life in Design</h1>
+                        <h1 class="sr-only"><span>A Life in Design</h1>
+                        <div class="type-wrap">
+                            <h1>
+                                <span id="typed2" style="white-space:pre;"></span>
+                            </h1>
+                        </div>
+                        <!-- <h1>A Life in Design</h1> -->
                         <p>You can have an art experience in front of a Rembrandt,or in front of a piece of graphic design.</p>
-                        <button class="site-btn">Get Started Now</button>
+                        <button class="site-btn">Get Started Now <i class="fas fa-angle-right"></i></button>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
-                        <img src="img/content-image.png" alt="">
+                    <div class="col-12 col-md-6 col-lg-5 offset-lg-2 text-right">
+                        <img src="img/content-image.png" alt="" class="wow zoomIn" data-wow-duration="1s" data-wow-delay=".1s">
                     </div>
                 </div>
             </div>
@@ -68,35 +79,165 @@
     <section class="main-freture-area">
         <div class="container">
             <div class="main-feature-item">
-                <div class="row">
+                <div class="row d-flex align-items-center">
                     <div class="col-12 col-md-6">
-                        <img src="img/mf-1.png" alt="">
+                        <img src="img/mf-1.png" alt="" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
                     </div>
                     <div class="col-12 col-md-6">
-                        <span class="icon-round">0</span>
-                        <h3>Take your docs anywhere</h3>
-                        <p>Take your docs anywhereSave files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all your devices.</p>
-                        <button class="site-btn">Buy Now</button>
+                        <div class="main-feature-item-text wow fadeInRight" data-wow-duration="1s" data-wow-delay=".1s">
+                            <span class="icon-round"><i class="fas fa-bullhorn"></i></span>
+                            <h3>Take your docs anywhere</h3>
+                            <p>Take your docs anywhereSave files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all your devices.</p>
+                            <button class="site-btn">Buy Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
             <div class="main-feature-item">
-                <div class="row">
+                <div class="row d-flex align-items-center">
                     <div class="col-12 col-md-6">
-                        <span class="icon-round">0</span>
-                        <h3>Work on slides together</h3>
-                        <p>Take your docs anywhereSave files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all your devices.</p>
-                        <button class="site-btn">Buy Now</button>
+                        <div class="main-feature-item-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
+                            <span class="icon-round"><i class="fas fa-bullhorn"></i></span>
+                            <h3>Work on slides together</h3>
+                            <p>Take your docs anywhereSave files on your computer, then access them on your phone from the road. Everything you keep in Dropbox is synced automatically to all your devices.</p>
+                            <button class="site-btn">Buy Now</button>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="img/mf-2.png" alt="">
+                        <img src="img/mf-2.png" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".1s">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+    <section class="global-feature">
+        <div class="container">
+            <h2 class="text-center">Our Global Features</h2>
+            <div class="global-feature-wrapper">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="global-feature-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".1s">
+                            <i class="fab fa-canadian-maple-leaf"></i>
+                            <h6>Broadcast your research</h6>
+                            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="global-feature-item wow fadeIn" data-wow-duration="2s" data-wow-delay=".1s">
+                            <i class="fab fa-canadian-maple-leaf"></i>
+                            <h6>Built for print</h6>
+                            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="global-feature-item wow fadeIn" data-wow-duration="3s" data-wow-delay=".1s">
+                            <i class="fab fa-canadian-maple-leaf"></i>
+                            <h6>One page only</h6>
+                            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="global-feature-item wow fadeIn" data-wow-duration="4s" data-wow-delay=".1s">
+                            <i class="fab fa-canadian-maple-leaf"></i>
+                            <h6>Job applications</h6>
+                            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="simple-pricing">
+        <div class="container">
+            <div class="pricing-wrapper">
+                <div class="pricing-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
+                    <h2>Simple pricing.</h2>
+                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh. Curabitur arcu erat, accumsan..</p>
+                    <div class="pricing-qut">
+                        <img src="img/price-head.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                    </div>
+                </div>
+                <div class="pricing-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".1s">
+                    <h3>FREE</h3>
+                    <ul>
+                        <li>Unlimited Access</li>
+                        <li>All Intigration</li>
+                        <li>Better permissions </li>
+                        <li>99.9% uptime SLA </li>
+                        <li>Basic support via email</li>
+                        <li>30,000 subscribers</li>
+                    </ul>
+                    <button class="site-btn">Sign Up</button>
+                </div>
+                <div class="pricing-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>Unlimited Access</li>
+                        <li>All Intigration</li>
+                        <li>Better permissions </li>
+                        <li>99.9% uptime SLA </li>
+                        <li>Basic support via email</li>
+                        <li>30,000 subscribers</li>
+                        <li>Custom domain</li>
+                        <li>PayPal &amp; credit card payments</li>
+                        <li>Instant payouts</li>
+                        <li>Website &amp; conversion tracking</li>
+                    </ul>
+                    <button class="site-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="pause-area">
+        <div class="container">
+            <div class="subscribe-options wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                <h2>Time is Money. Stop Wasting It.</h2>
+                <p>Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+                <button class="site-btn">Subscribe Now</button>
+            </div>
+            <div class="clients">
+                <h5>We Were Featured By </h5>
+                <ul>
+                    <li><img src="img/client-1.png" alt=""></li>
+                    <li><img src="img/client-2.png" alt=""></li>
+                    <li><img src="img/client-3.png" alt=""></li>
+                    <li><img src="img/client-4.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <ul class="footer-menu">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>   
+                </ul>
+                <p>Follow us <a href="#">@themefisher</a>  updates <br> Copyright 2017 - Themefisher</p>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -108,6 +249,24 @@
   	<!-- BOOTSTRAP JAVASCRIPT LINKED HERE -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/typed.min.js"></script>
+    <script>
+        var typed3 = new Typed('#typed2', {
+            strings: ['A Life in Design'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            smartBackspace: true, // this is a default
+            loop: true
+        });
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(window).on('load', function(){
+            new WOW().init();
+        })
+    </script>
 
   	<!-- MAIN USED JAVASCRIPT -->
   	<script src="js/plugins.js"></script>

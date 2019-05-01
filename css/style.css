@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+body {
+  background: #ffffff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #95979A; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #383D46; }
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 15px; }
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 17px; }
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 18px; }
+
+.site-btn {
+  color: #ffffff;
+  background: #6C63FF;
+  border: none;
+  border-radius: 100px;
+  font-weight: 400;
+  padding: 10px 35px;
+  box-shadow: 0px 11px 22px rgba(108, 99, 255, 0.51); }
+
+header {
+  position: absolute;
+  width: 100%; }
+  header .header-wrapper {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between; }
+    header .header-wrapper nav ul {
+      display: flex; }
+      header .header-wrapper nav ul li {
+        list-style: none;
+        margin-left: 25px; }
+        header .header-wrapper nav ul li a {
+          display: inline-block;
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 12px; }
+
+/*BANNER STYLES HERE*/
+.banner {
+  background: url(../img/Path-2.png) no-repeat scroll center bottom/100% 35%, url(../img/background.png) no-repeat fixed center center/cover; }
+  .banner .banner-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center; }
+    .banner .banner-wrapper img {
+      max-width: 90%; }
+    .banner .banner-wrapper h1 {
+      color: #ffffff; }
+    .banner .banner-wrapper p {
+      font-size: 20px;
+      color: #ffffff; }
+    .banner .banner-wrapper .site-btn {
+      background: #414056;
+      font-weight: 700;
+      margin-top: 20px;
+      transition: all .3s; }
+      .banner .banner-wrapper .site-btn .fas {
+        opacity: .00;
+        margin-left: -5px;
+        transition: all .3s; }
+      .banner .banner-wrapper .site-btn:hover .fas {
+        opacity: 1;
+        margin-left: 5px; }
+
+.main-freture-area {
+  padding: 20px 0 100px 0; }
+  .main-freture-area .icon-round {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin-bottom: 15px;
+    color: #6C63FF;
+    font-size: 1.2em;
+    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.06); }
+  .main-freture-area .main-feature-item-text {
+    width: 73%;
+    margin: 0 auto; }
+    .main-freture-area .main-feature-item-text .site-btn {
+      font-size: .8em;
+      padding: 10px 45px;
+      margin-top: 15px; }
+
+.global-feature {
+  padding: 100px 0;
+  background: url(../img/Service.png) no-repeat center center/cover;
+  color: #ffffff; }
+  .global-feature h2 {
+    margin-bottom: 75px;
+    color: #ffffff; }
+  .global-feature .global-feature-item {
+    text-align: center;
+    padding: 20px; }
+    .global-feature .global-feature-item .fab {
+      font-size: 30px;
+      margin-bottom: 10px; }
+    .global-feature .global-feature-item h6 {
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 700; }
+    .global-feature .global-feature-item p {
+      font-size: 13px; }
+
+.simple-pricing {
+  padding: 100px 0; }
+  .simple-pricing .pricing-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .simple-pricing .pricing-wrapper .pricing-left {
+      width: 40%;
+      padding-right: 5%; }
+      .simple-pricing .pricing-wrapper .pricing-left .pricing-qut {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-family: serif;
+        margin-top: 25px; }
+        .simple-pricing .pricing-wrapper .pricing-left .pricing-qut img {
+          width: 55%;
+          margin-right: 10px; }
+    .simple-pricing .pricing-wrapper .pricing-item {
+      background: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.07);
+      padding: 50px;
+      text-align: center;
+      width: 30%; }
+      .simple-pricing .pricing-wrapper .pricing-item ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0; }
+        .simple-pricing .pricing-wrapper .pricing-item ul li {
+          color: #8C8C8C;
+          margin-bottom: 7px;
+          font-size: .9em; }
+      .simple-pricing .pricing-wrapper .pricing-item .site-btn {
+        padding: 10px 45px;
+        margin-top: 35px;
+        font-size: 12px;
+        font-weight: 600; }
+
+.subscribe-options {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; }
+  .subscribe-options p {
+    color: #808080; }
+  .subscribe-options .site-btn {
+    font-weight: 600; }
+
+.clients {
+  text-align: center;
+  margin: 100px 0; }
+  .clients ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+footer {
+  padding: 50px 0;
+  background: #2F2E3D;
+  text-align: center; }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer ul li {
+      margin: 0 10px; }
+      footer ul li a {
+        font-weight: 400;
+        font-size: .9em; }
+  footer a {
+    color: #ffffff; }
+  footer p {
+    margin: 0;
+    font-size: 12px; }
+
+/*@media screen and (max-width: 1199px) {
+
+}*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,33 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
 
 
 
 // variables for font
-
-$heading-font: 'Ubuntu', sans-serif;
-$global-font: 'Dosis', sans-serif;
+$global-font: 'Open Sans', sans-serif;
 
 
 // variable font weight
-
-$thin: 200;
+$light: 300;
 $normal: 400;
 $bold: 600;
-$havy: 800;
+$havy: 700;
 
 
 // variable for color
-
 $black:#000000;
 $white: #ffffff; 
-$dark: #212121;
-$light: #616161;
-$blue: #4484CE;
-$red: #4484CE;
-$green: #3CC37E;
-$darkblue: #062F4F;
-$light-black: #161220;
+$dark: #383D46;
+$light-dark: #95979A;
+$blue: #6C63FF;
 
 
-@media only screen and (max-width: 991px) {}
+// variable for media
+$bp-1199: "screen and (max-width: 1199px)";
+$bp-991: "screen and (max-width: 991px)";
+$bp-767: "screen and (max-width: 767px)";
+$bp-575: "screen and (max-width: 575px)";
+

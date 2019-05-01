@@ -1,15 +1,38 @@
 body{
 	background: $white;
+	font-size: 16px;
 	font-family: $global-font;
-	font-weight: $normal;
-	line-height: 1.4;
-	color: $dark;
-	display:flex;
-	flex-flow: column;
+	font-weight: $light;
+	line-height: 1.6;
+	color: $light-dark;
 }
 
 
 h1, h2, h3, h4, h5, h6{
-	font-family: $heading-font;
-	font-weight: $havy;
+	font-family: $global-font;
+	font-weight: $bold;
+	color: $dark;
+}
+h1{
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+h2{
+	font-size: 30px;
+	margin-bottom: 17px;
+}
+h3{
+	font-size: 24px;
+	margin-bottom: 18px;
+}
+
+
+.site-btn{
+	color: $white;
+	background: $blue;
+	border: none;
+  	border-radius: 100px;
+  	font-weight: $normal;
+  	padding: 10px 35px;
+  	box-shadow: 0px 11px  22px rgba(108,99,255,0.51);
 }
