@@ -46,6 +46,7 @@ header {
 				background: none;
 				cursor: pointer;
 				transition:all .6s;
+				z-index: 11;
 
 				span{
 					display: block;
@@ -113,8 +114,22 @@ header {
 				right: -200px;
 				transition: all .3s;
 
+
+
 				&.menu-opne{
 					right:0;
+
+					&:before {
+						content:"";
+						height: 100vh;
+						width: 100vw;
+						position: absolute;
+						top: 0;
+						right: 180px;
+						background: rgba(0,0,0,.2);
+						z-index:0;
+						transition: all 1s;
+					}
 				}
 
 				ul{
